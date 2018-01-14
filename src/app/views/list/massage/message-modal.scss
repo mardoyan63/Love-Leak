@@ -1,0 +1,107 @@
+mess-modal{
+    ion-content{
+        .scroll-content{
+            background-color: #090e12;
+            overflow: hidden;
+        }
+        .massage-btt{
+                    
+                    position: absolute;
+    bottom: 5px;
+    right: 5px;
+        padding: 0;
+        height: 9vh;
+        width: 9vh;
+        background-color: #090e12;
+      }
+    .grid{
+        height: 100%;
+        padding: 0;
+        .photo-row{
+            height: 20%;
+            .col{
+                                .like-photo{
+                                    margin: auto;
+                    float: right;
+            border-radius: 50%;
+            border: 5px solid #b93b25;  
+            height: 18vh;
+            width: 18vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+            }
+        }
+        .mess-row{
+            height: 55%;
+            .col{
+                .messages{
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    height: 100%;
+                    width: 100%;
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+                    .scroll-messages{
+                        margin: 3px;
+                        .lover-message{
+                            margin: 3px;
+                             border: 1px solid #bdbdbd;
+                            border-radius: 20px;
+                            width: 80%;
+                            float: left;
+                            ion-label
+                            {
+                                white-space: normal;
+                                margin: 12px;
+                                color: white;
+                            }
+                        }
+                        .my-message{
+                            margin: 3px;
+                            border: 1px solid #b93b25;
+                            border-radius: 20px;
+                            width: 80%;
+                            float: right;
+                            ion-label
+                            {
+                                white-space: normal;
+                                margin: 12px;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .frase-row{
+            margin-right: 9vh;
+            height: 25%;
+            .col{
+                margin-right: 5px;
+                 .frases{
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    height: 100%;
+                    width: 100%;
+                    overflow-x: hidden;
+                        overflow-y: scroll;
+                    .scroll-frases{
+                        margin: 3px;
+                        .frase-btt{
+                            background-color: #090e12;
+                            width: 100%;
+                            ion-label{
+                                text-align: center;
+                                color: white;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}

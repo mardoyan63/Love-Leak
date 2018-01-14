@@ -1,0 +1,36 @@
+<ion-content>
+	<ion-grid>
+		<ion-row justify-content-center>
+			<ion-col>
+				<ion-label class="count">{{slideIndex}}/{{this.list.length}}</ion-label>
+			</ion-col>
+		</ion-row>
+		<ion-row justify-content-center>
+			<ion-col>
+				<div *ngIf="showArrow" class="arrow" [style.transform]="'rotate(' + rotate + 'deg)'">
+					<img src="assets/pp/arrow.png">
+				</div>
+				<ion-slides (ionSlideDidChange)="slideChanged()">
+					<ion-slide *ngFor="let item of list" [ngStyle]="{'background-image' : 'url(' + item.photo + ')'}">
+					</ion-slide>
+				</ion-slides>
+			</ion-col>
+		</ion-row>
+		<ion-row justify-content-center>
+			<ion-col>
+				<div class="cardio">
+					<img class="heart-left" src="assets/pp/cardiogramma-left.png">
+					<img class="heart-right" src="assets/pp/cardiogramma-right.png">
+				</div>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+	<button (tap)="rotateArrow()" class="heart-btt"><img src="assets/pp/lovedlist.png"></button>
+	<button (tap)="openModal()" class="massage-btt"><img src="assets/pp/messagePasive.png"></button>
+	<button class="video-btt"><img src="assets/pp/uploadvideo.png"></button>
+</ion-content>
+<ion-footer>
+	<ion-toolbar>
+  <ion-label (tap)="showSettings()" class="rightText" float-right>Settings</ion-label>
+		</ion-toolbar>
+</ion-footer>

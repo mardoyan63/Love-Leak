@@ -1,0 +1,82 @@
+<ion-content>
+    <ion-grid>
+        <ion-row class="photo-row" justify-content-center>
+            <ion-col>
+                <div class="like-photo" [ngStyle]="{'background-image': 'url(' + photo + ')'}"></div>
+            </ion-col>
+        </ion-row>
+        <ion-row class="mess-row" justify-content-center>
+            <ion-col>
+                <div class="messages">
+                    <div class="scroll-messages">
+                        <div class="lover-message">
+                            <ion-label>Hello my freand!</ion-label>
+                        </div>
+                        <div class="my-message">
+                            <ion-label>
+                                Hello my freand! The scrollbar set of CSS properties is a proprietary style hook from Internet Explorer 5.5, which let designers
+                                create custom themes for the browser's native scrollbars. Currently, it is exposed behind
+                                the -webkit vendor prefix for use in browsers using the Webkit (and Blink) rendering engine.
+                                This almanac entry is an overview, for a more complete breakdown of working with custom scrollbars,
+                                please read this CSS-Tricks article.
+                            </ion-label>
+                        </div>
+                        <div class="my-message">
+                            <ion-label>
+                                Hello my freand! The scrollbar set of CSS properties is a proprietary style hook from Internet Explorer 5.5, which let designers
+                                create custom themes for the browser's native scrollbars. Currently, it is exposed behind
+                                the -webkit vendor prefix for use in browsers using the Webkit (and Blink) rendering engine.
+                                This almanac entry is an overview, for a more complete breakdown of working with custom scrollbars,
+                                please read this CSS-Tricks article.
+                            </ion-label>
+                        </div>
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row class="frase-row" justify-content-center>
+            <ion-col>
+                <div class="frases">
+                    <div class="scroll-frases">
+                        <button class="frase-btt">
+                            <ion-label>
+                                Hello my freand!
+                            </ion-label>
+                        </button>
+                        <button class="frase-btt">
+                            <ion-label>
+                                Hello my freand!
+                            </ion-label>
+                        </button>
+                        <button class="frase-btt">
+                            <ion-label>
+                                Hello my freand!
+                            </ion-label>
+                        </button>
+                        <button class="frase-btt">
+                            <ion-label>
+                                Hello my freand!
+                            </ion-label>
+                        </button>
+                        <button class="frase-btt">
+                            <ion-label>
+                                Hello my freand!
+                            </ion-label>
+                        </button>
+                        <button class="frase-btt">
+                            <ion-label>
+                                Hello my freand!
+                            </ion-label>
+                        </button>
+                        <button class="frase-btt">
+                            <ion-label>
+                                Hello my freand!
+                            </ion-label>
+                        </button>
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <button (tap)="dismiss()" class="massage-btt"><img src="assets/pp/messageActive.png"></button>
+</ion-content>

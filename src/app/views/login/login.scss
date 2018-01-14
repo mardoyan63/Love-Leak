@@ -1,0 +1,150 @@
+page-login {
+	ion-content{
+		.scroll-content{
+			background-color: #090e12;
+		}
+		.inp-grid{
+			margin: auto;
+			height: 200px;
+			padding: 0;
+		width: 100%;
+		.row{
+			height: 100%;
+			.col{
+				
+				.item{
+					margin: auto;
+					border-radius: 100px;
+					padding: 0;
+					color: white;
+					border: 1px solid white;
+					background-color: #090e12;
+					.item-inner{
+						padding: 0;
+						margin: 0
+					}
+					.email-icon{
+						height: 20px;
+    					width: 26px;
+    					margin: 0 8px;
+					}
+					.password-icon{
+						height: 20px;
+    					width: 20px;
+    					margin: 0 10px;
+					}
+					.openEye-icon{
+						z-index: 1;
+						.eys-icon{
+						height: 20px;
+    					width: 26px;
+    					margin: 0 5px;
+					}
+					}
+					ion-input{
+						border-bottom: 1px solid white;
+						.text-input{
+							margin: 0;
+						}
+					}
+					input::placeholder{
+						color: white;
+					}
+				}
+				.name-item{
+					.item-inner{
+						margin-right: 2.5em;
+					}
+				}
+				.login{
+					font-size: 1.2em;
+					width: 100%;
+					color: white;
+					border: 1px solid white; 
+					ion-icon{
+						display: flex;
+						margin-top: auto;
+						margin-bottom: auto;
+						top: 0;
+						bottom: 0;
+						position: absolute;
+						left: 0;
+						.login-icon{
+						height: 20px;
+    					width: 30px;
+    					margin: auto 16px;
+						}
+					}
+				}
+				.login.activated{
+					background-color: #090e12;
+				}
+			}
+		}
+		
+	}
+	.logo-grid{
+		.col{
+			padding: 0;
+			text-align: center;
+			.logo-img{
+				height: 30vh;
+			}
+		}
+		.logo-row{
+			.col{
+				padding: 0;
+				.name1{
+					text-align: center;
+					color: white;
+					font-size: 3em;
+					margin: 0;
+				}
+				.name2{
+					margin: 0;
+					text-align: center;
+					color: white;
+					font-size: 2em;
+					font-weight: bold;
+					color: #b93b25;
+				}
+			}
+		}
+	}
+	}
+ion-footer{
+	align-items: center;
+	height: 7%;
+	background-color: #090e12;
+    display: flex;
+    .toolbar-background{
+        background-color: #090e12;
+    }
+    .toolbar-content{
+        background-color: #090e12;
+	.leftText{
+		    font-size: 15px;
+		color: white;
+		margin: auto;
+		text-align: left;
+	}
+	.rightText{
+		    font-size: 16px;
+		color: white;
+		margin: auto;
+		text-align: right;
+    }
+    }
+}
+.item-md.item-input.item-input-has-focus .item-inner,
+.item-md.item-input.input-has-focus .item-inner{
+		border: none;
+		box-shadow: none
+	}
+
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner, .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner{
+	border: none;
+	box-shadow: none;
+}
+					
+}

@@ -1,0 +1,49 @@
+<ion-content>
+  <ion-grid class="logo-grid">
+     <ion-row justify-content-center>
+      <ion-col>
+        <img class="logo-img" src="assets/pp/icon.png">
+      </ion-col>
+    </ion-row>
+    <ion-row class="logo-row">
+      <ion-col>
+        <ion-label class="name1">LOVE</ion-label>
+        <ion-label class="name2">LAEK</ion-label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="inp-grid">
+    <ion-row justify-content-center>
+        <ion-col col-10>
+            <ion-item class="name-item">
+              <img class="email-icon" item-start src="assets/pp/email.png">
+                <ion-input placeholder="email" [(ngModel)]="username" type="text"></ion-input>
+              </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row justify-content-center>
+        <ion-col col-10>
+            <ion-item>
+              <img class="password-icon" item-start src="assets/pp/password.png">
+                <ion-input placeholder="password" [(ngModel)]="password" type="{{showPassword ? 'text' : 'password'}}"></ion-input>
+                <ion-icon class="openEye-icon" (tap)="openEye()" item-end><img class="eys-icon" item-start src="{{eys}}"></ion-icon>
+              </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row justify-content-center>
+        <ion-col col-10>
+            <button icon-start mode="ios" ion-button  outline round class="login" (tap)="login()">
+              <ion-icon><img class="login-icon" src="assets/pp/login.png"></ion-icon>
+              Login
+            </button>
+        </ion-col>
+      </ion-row>
+  </ion-grid> 
+</ion-content>
+<ion-footer>
+	<ion-toolbar>
+  <ion-label class="leftText" float-left (tap)="registration()">Create Account</ion-label>
+  <ion-label (tap)="showCompass()" class="rightText" float-right>Terms & sdsds</ion-label>
+		</ion-toolbar>
+</ion-footer>
+

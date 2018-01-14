@@ -1,0 +1,120 @@
+page-list{
+    ion-content{
+        height: 93%;
+        .scroll-content{
+            height: 100%;
+            overflow: hidden;
+            background-color: #090e12;
+             width: 100%;
+             
+        }
+        ion-grid{
+            .col{
+                text-align: center;
+            .cardio{
+                margin: auto;
+                background-image: url("./../assets/pp/like.png");
+                height: 20vw;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center; 
+                width: 94vw;
+                display: flex;
+                flex-direction: row;
+            .heart-left{
+                 height: 50%;
+                margin: auto;
+                margin-right: 1.5px;;
+                width: 30%;
+                }
+            .heart-right{
+                    height: 50%;
+                    margin: auto;
+                    margin-left: 1.5px;;
+                        width: 30%;
+                    }
+            }
+            .count{
+                color: white;
+                text-align: center;
+                font-size: 1.5em;
+                margin: 0;
+            }
+            .arrow{
+                margin: auto;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                position: absolute;
+                height: 100%;
+                width: fit-content;
+                transition: 0.3s;
+            }
+        ion-slides{
+            .swiper-container{
+                border-radius: 50%;
+                border: 5px solid #b93b25; 
+            }
+            border-radius: 50%;  
+            margin: 10vw auto;
+            width: 75vw;
+            height: 75vw;;
+            ion-slide{
+                    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+      }
+    }
+        }
+    }
+    .heart-btt{
+        margin: 5px;
+        position: absolute;
+        bottom: 0;
+        padding: 0;
+        height: 9vh;
+        width: 9vh;
+        background-color: #090e12;
+      }
+    .massage-btt{
+        margin: 5px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0;
+        height: 9vh;
+        width: 9vh;
+        background-color: #090e12;
+      }
+    .video-btt{
+         margin: 11px;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        padding: 0;
+        height: 10vh;
+        width: 9vh;
+        background-color: #090e12;
+    }
+  }
+ion-footer{
+	align-items: center;
+	height: 7%;
+	background-color: #090e12;
+    display: flex;
+    .toolbar-background{
+        background-color: #090e12;
+    }
+    .toolbar-content{
+        background-color: #090e12;
+	.rightText{
+        font-size: 16px;
+		color: white;
+		margin: auto;
+		text-align: right;
+    }
+    }
+}
+}
+
